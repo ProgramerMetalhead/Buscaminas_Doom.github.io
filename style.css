@@ -1,0 +1,206 @@
+body {
+    background-image: url("Resources/Doom-feature-v1.jpg");
+    background-size: cover;
+    background-position: auto;
+    background-repeat: no-repeat;
+}
+
+#submit {
+    width: 120px;
+    height: 40px;
+    background-image: url('Resources/doom-bigupper-okey.png'); /* Ruta de la imagen */
+    background-size: contain; /* Ajusta el tamaño de la imagen */
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    padding: 5px 10px;
+}
+
+#div-dif-container {
+    display: grid;
+}
+
+span {
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+}
+
+.skull {
+    background-image: url("Resources/Skull.ico");
+    background-size: 50px 35px;
+}
+
+.level-selector-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#gameboard-container{
+    display: grid;
+    visibility: hidden;
+
+    justify-content: center;
+}
+
+.very-easy{
+    grid-template-rows: repeat(5,100px);
+    grid-template-columns: repeat(5,100px);
+}
+
+.easy{
+    grid-template-rows: repeat(10,50px);
+    grid-template-columns: repeat(10,50px);
+}
+
+.medium{
+    grid-template-rows: repeat(15,35px);
+    grid-template-columns: repeat(15,35px);
+}
+
+.hard{
+    grid-template-rows: repeat(20,25px);
+    grid-template-columns: repeat(20,25px);
+}
+
+.ultra-hard{
+    grid-template-rows: repeat(25,20px);
+    grid-template-columns: repeat(25,20px);
+}
+
+.check-very-easy {
+
+width: 100px;
+height: 100px;
+border: 1px solid black;
+display: flex;
+justify-content: center;
+background-size: 100px 100px;
+
+/* Centrar horizontalmente */
+align-items: center;
+font-size: 50px;
+
+}
+
+.check-easy {
+
+width: 50px;
+height: 50px;
+border: 1px solid black;
+display: flex;
+justify-content: center;
+
+background-size: 50px 50px;
+/* Centrar horizontalmente */
+align-items: center;
+font-size: 25px;
+
+}
+
+.check-medium {
+
+width: 35px;
+height: 35px;
+border: 1px solid black;
+display: flex;
+justify-content: center;
+
+background-size: 35px 35px;
+/* Centrar horizontalmente */
+align-items: center;
+font-size: 15px;
+    
+}
+
+.check-hard {
+
+width: 25px;
+height: 25px;
+border: 1px solid black;
+display: flex;
+justify-content: center;
+
+background-size: 25px 25px;
+/* Centrar horizontalmente */
+align-items: center;
+font-size: 10px;
+    
+}
+
+.check-ultra-hard {
+
+width: 15px;
+height: 15px;
+border: 1px solid black;
+display: flex;
+justify-content: center;
+
+background-size: 15px 15px;
+/* Centrar horizontalmente */
+align-items: center;
+font-size: 5px;
+        
+}
+.checkgray{
+    background-color: gray;
+}
+.chekc00{
+    background-image: url("Resources/doom-condensed-0.png");
+}
+.check01 {
+    background-image: url("Resources/doom-condensed-1.png");
+}
+.check02 {
+    background-image: url("Resources/doom-condensed-2.png");
+}
+.check03{
+    background-image: url("Resources/doom-condensed-3.png");
+}
+.check04{
+    background-image: url("Resources/doom-condensed-4.png");
+}
+.check05{
+    background-image: url("Resources/doom-condensed-5.png");
+}
+.check06{
+    background-image: url("Resources/doom-condensed-6.png");
+}
+.check07{
+    background-image: url("Resources/doom-condensed-7.png");
+}
+.check08{
+    background-image: url("Resources/doom-condensed-8.png");
+}
+.checkDeamon{
+    background-image: url("Resources/Deamon.png");
+}
+
+.modal{
+    display: none;
+}
+/* Modal Content */
+.modal-content{
+  background-color: grey;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  border: 1px solid black;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+} 
